@@ -1,12 +1,20 @@
+import { CategoriaProvider } from './../../providers/categoria/categoria';
 import { Component } from '@angular/core';
-import { NavController, NavParams, ToastController } from 'ionic-angular';
-import { CategoriaProvider } from '../../providers/categoria/categoria';
+import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 
+/**
+ * Generated class for the CategoriaPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+
+@IonicPage()
 @Component({
-  selector: 'page-list',
-  templateUrl: 'list.html'
+  selector: 'page-categoria',
+  templateUrl: 'categoria.html',
 })
-export class ListPage {
+export class CategoriaPage {
   categorias: any;
   constructor(
     public navCtrl: NavController, 
@@ -24,4 +32,5 @@ export class ListPage {
       this.toast.create({ message: 'Erro ao carregar as categorias.', duration: 3000, position: 'botton' }).present();
     });
   }
+
 }

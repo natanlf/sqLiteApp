@@ -1,5 +1,7 @@
 {
   "name": "sqLiteApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
